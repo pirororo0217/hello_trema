@@ -9,8 +9,8 @@ class HelloTrema < Trema::Controller
     logger.info "Hi! from #{self.class.name}"
   end
 
-  def switch_disconnected(dpid)
-    logger.info "Switch #{dpid.to_hex} is disconnected."
+  def switch_disconnected(datapath_id)
+    logger.info "Switch #{datapath_id.to_hex} is disconnected."
   end
 end
 
